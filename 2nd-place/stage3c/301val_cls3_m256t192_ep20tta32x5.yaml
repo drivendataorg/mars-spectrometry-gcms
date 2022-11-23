@@ -1,0 +1,55 @@
+###################
+## Model options
+model_params:
+  model_type: "models_cls"
+  model_cls:  Model_1st_SimpleCls3
+  base_model_name: PLACE_HOLDER
+  image_channels: 2
+  freeze_base: False
+  dropout: 0.0
+  resize_to_timm_input_size: False  # new in v2
+  embed_rows_cols_2_channels: True
+  tta_size_step: 32
+  tta_size_step_num: 5
+
+
+dataset_params:
+  dataset_type: "train_val"
+  m_bins: 256
+  t_bins: 192
+  max_m: 255  # 256-1; or 512-1
+  min_m: 0  # 256-1; or 512-1
+  remove_he: True  #False  # m==4
+  m_to_int_mode: round
+  min_clip: 0.0001
+  scale_before_log: 1000
+  log_space: True
+  norm_to_one: True
+  mix_aug_prob: 0.0
+
+
+###################
+## Data loader options
+train_data_loader:
+  batch_size: 8
+  num_workers: 4
+
+val_data_loader:
+  batch_size: 32
+  num_workers: 4
+
+test_data_loader:
+  batch_size: 2
+  num_workers: 4
+
+###################
+## Train params
+train_params:
+  n_epochs: 20
+  n_warmup_epochs: 2
+  optimizer: adamW   #  sgd09  #adamW
+  scheduler: cosine  #CosineAnnealingWarmRestarts   # steps CosineAnnealingWarmRestarts
+  initial_lr: 0.0001
+  wd: 0.01
+  grad_clip: 64
+  labels_smooth: 0.01
