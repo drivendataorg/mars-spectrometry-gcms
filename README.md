@@ -12,7 +12,7 @@ Their models detect the presence of certain families of chemical compounds in da
 
 ## What's in this Repository
 
-This repository contains code from winning competitors in the [Mars Spectrometry 2: Gas Chromatography](https://www.drivendata.org/competitions/97/nasa-mars-gcms/) DrivenData challenge. It is the companion to the first Mars spectrometry challenge ([Mars Spectrometry: Detect Evidence for Past Habitability](https://www.drivendata.org/competitions/93/nasa-mars-spectrometry/)), which was conducted using evolved gas analysis (EGA) data.
+This repository contains code from winning competitors in the [Mars Spectrometry 2: Gas Chromatography](https://www.drivendata.org/competitions/97/nasa-mars-gcms/) DrivenData challenge. It is the companion to the first Mars spectrometry challenge ([Mars Spectrometry: Detect Evidence for Past Habitability](https://www.drivendata.org/competitions/93/nasa-mars-spectrometry/)), which was conducted using evolved gas analysis (EGA) data. Code for all winning solutions are open source under the MIT License.
 
 **Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
 
